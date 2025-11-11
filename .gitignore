@@ -11,6 +11,8 @@
 
 # OS files
 .DS_Store
+Icon
+Icon?
 
 # Editor files
 *.swp
