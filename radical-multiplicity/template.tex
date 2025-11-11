@@ -1,0 +1,241 @@
+\documentclass[10pt,leqno]{amsart}
+\setcounter{secnumdepth}{0} % Remove section numbering
+\usepackage{graphicx}
+\baselineskip=16pt
+
+\usepackage{indentfirst}
+\usepackage{parskip}
+\usepackage{csquotes}
+
+% Let amsart handle margins (arXiv-compliant defaults)
+% \topmargin= .5cm
+% \textheight= 20cm
+% \textwidth= 32cc
+
+% \evensidemargin= .9cm
+% \oddsidemargin= .9cm
+
+% Add spacing between paragraphs
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0em}
+\usepackage{amssymb,amsthm,amsmath}
+\usepackage{xcolor,paralist,hyperref,titlesec,fancyhdr,etoolbox}
+\usepackage[utf8]{inputenc}  % UTF-8 support
+\usepackage[T1]{fontenc}     % T1 encoding
+\usepackage{url}
+\usepackage{float}
+\usepackage{microtype}
+\usepackage[round]{natbib}
+\graphicspath{ {./images/} }
+\usepackage[width=0.9\textwidth]{caption}
+\usepackage{tikz}
+
+% Define theorem environments
+\newtheorem{theorem}{Theorem}[]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+% Section formatting - no numbers
+\titleformat{\section}[display]{\normalfont\huge\bfseries\centering}{}{0pt}{\Large}
+\titlespacing*{\section}{0pt}{2ex}{2ex}
+
+% Hyperlink setup
+\hypersetup{ colorlinks=true, linkcolor=black, filecolor=black, urlcolor=black, citecolor=black }
+
+% Custom proof environment
+\def\proof{\noindent {\it Proof. $\, $}}
+\def\endproof{\hfill $\Box$ \vskip 5 pt }
+
+% Float spacing
+\setlength{\textfloatsep}{10pt plus 2pt minus 2pt}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{10pt plus 2pt minus 2pt}
+
+% Subsection spacing
+\titlespacing*{\subsection}{0pt}{0.8ex plus .2ex minus .1ex}{0.6ex plus .2ex minus .1ex}
+
+\newcommand{\secref}[2]{\S\ref{#1} \hyperref[#1]{#2}}
+
+% Lists
+\usepackage{enumitem}
+
+\makeatletter
+\renewcommand{\@settitle}{\begin{center}\baselineskip14\p@\relax
+    {\Large\bfseries\@title}%
+  \end{center}\normalsize}
+\renewcommand{\@setauthors}{%
+  \begingroup
+  \trivlist
+  \centering\footnotesize \@topsep30\p@\relax
+  \advance\@topsep by -\baselineskip
+  \item\relax
+  \andify\authors
+  \authors
+  \endtrivlist
+  \endgroup}
+\makeatother
+
+% Remove running headers, keep page numbers
+\pagestyle{plain}
+
+\begin{document}
+
+\title{Radical Multiplicity\\[2pt]
+{\normalsize On the Innumerable Realities of a Single Musical Composition}}
+\maketitle
+
+{\normalsize
+\begin{center}
+  {\bfseries Dark}\\[0.3em]
+  \texttt{dark@darXiv.co}\\[1em]
+  v1.0\\[1.2em]
+  November 10, 2025
+\end{center}
+}
+
+\vspace{1em}
+
+\begin{abstract}
+  No organism ever experiences the same piece of music the same way twice. Musical experience exhibits \emph{radical multiplicity}: repeated encounters with the same composition generate distinct phenomenal realities. Radical multiplicity emerges as a necessity from finite and variable attention recursively sampling high-dimensional experiential space structured by compositional constraint-surfaces. Each moment of listening occupies a distinct \emph{experiential state}; each encounter forms a succession of such states, tracing a unique \emph{trajectory} through experiential space. Compositions function as \emph{probabilistic constraint-surfaces}: landscapes of likelihood that guide attention without determining specific paths. From this architecture, identical trajectories are vanishingly improbable, yielding inexhaustibility, interpretive diversity, and the phenomenology of revisitation. The framework generalizes, providing theoretical foundations for attention-driven signal processing across phenomenological, computational, and neuroscientific paradigms.
+
+\end{abstract}
+
+\vspace{2.5em}
+
+
+\section{On Radical Multiplicity}
+
+\emph{Why does an organism revisit a composition a thousand times across its lifetime?}
+
+Language speaks of \emph{listening to a piece of music} as if each encounter manifested the same phenomenal reality. This uniformity fails in experience: the same composition unfolds differently across repeated listenings, each encounter disclosing aspects previously unmanifested, never exhausting what remains to be heard. 
+
+Consider repeated encounters with a dense harmonic drone. \emph{First encounter}: a monolithic wall of sound, oppressive, undifferentiated. \emph{Second encounter}: the wall fractures: upper partials emerge prominently against a foundational hum. \emph{Third encounter}: attention locks onto beating frequencies, the texture becomes granular, pulsing. \emph{Fourth encounter}: all of this recedes; what comes forward is the negative space the drone yields, suffusing reality itself: the way it tints ambient light, weighs on the body, reshaping the felt quality of the surrounding environment into an affective texture. Same composition, radically different realities. 
+
+Across these encounters, whether it is one organism revisiting a composition or different organisms encountering the same composition, attention traces fundamentally different trajectories through high-dimensional experiential space. Each listening promises and delivers genuine discovery: untraversed territories, hidden textures, unearthed emotions, novel insights. This is \emph{radical multiplicity}: encounters with a single fixed composition enable innumerable distinct phenomenal realities. This multiplicity is \emph{radical} not necessarily in the magnitude of difference between individual trajectories. Some may differ minimally (slight positional shifts), others substantially (traversing entirely different regions). Rather, it is \emph{radical} in that two encounters with the same composition will effectively never yield the same phenomenal trajectory.
+
+\section{On Musical Composition}
+This framework focuses on recorded music compositions. In listening, the composition advances through its invariant, encoded temporal content. Recordings provide \emph{acoustic determinacy}: the encoded waveform remains acoustically fixed across encounters, yet each encounter with it enables multiple experiential trajectories. 
+
+
+
+\section{On Attention}
+
+Attention is a resource allocation mechanism. Computational models characterize attention as priority maps or saliency-based selection \citep{Itti2001}, and auditory scene analysis demonstrates how finite processing resources partition complex acoustic scenes into attentional streams \citep{WangBrown2006}, highlighting how finite processing resources must be allocated across competing stimuli.
+
+\textit{Finite Capacity.}
+Attention is a limited resource distributed across competing phenomena: allocating attention to one phenomenon means less capacity available for others \citep{Kahneman1973,James1890}.
+
+\textit{Selectivity.}
+Finite capacity induces selectivity. This selectivity is phenomenologically evident in the partiality of experience: an organism does not grasp the entire cosmos when it looks up into the stars. Certain phenomena come into sharp relief while others recede into diffuse awareness. We are \emph{thrown} \citep{Heidegger1962} into one experiential state rather than occupying all states simultaneously.
+
+
+\textit{Variability.}
+Attention is variable. This variability stems from the organism's state changes, environmental factors, memory activation, and stochastic processes. Micro-deviations in attention cascade through butterfly effects, sensitivity to initial conditions characteristic of chaotic dynamical systems \citep{Lorenz1963}, such that a minor drift opens entirely new regions of experiential space. Such sensitivity to initial conditions ensures that even nominally identical organisms yield divergent trajectories, as small perturbations amplify through recursive cascade.
+
+\section{On Experiential Space}
+
+The \emph{experiential space} is a high-dimensional space of all possible configurations of musical experience. Experiential dimensions are \emph{degrees of freedom} in experiential configuration. Radical multiplicity observed across repeated encounters provides empirical evidence for high-dimensional experiential space. Phenomenological analysis reveals that distinct musical experiences vary along multiple dimensions independently, each constituting a \emph{degree of freedom}. One encounter may attend to \emph{shimmering upper frequencies} with \emph{expansive spatial diffusion}, while another focuses on \emph{dense low-frequency drones} with \emph{forward-driving momentum}. These variations occur along distinct phenomenal axes: spectral, affective, memorial, spatial, temporal, among others, spanning all aspects of experience, not only acoustic features. While certain qualities may correlate in practice (harmonic tension often co-occurs with affective tension), each dimension admits separate variation: variation along one axis does not necessitate variation along others. \emph{Whether these dimensions exhibit statistical independence, partial correlation, or more complex interdependencies remains a question for future work in mathematical modeling.} If two encounters yield different experiences, they must occupy different positions in experiential space, demanding degrees of freedom sufficient to accommodate variation along all observed phenomenal axes. A composition's inexhaustibility, the fact that it never ceases to yield novel experiences, makes necessary a vast, high-dimensional experiential structure to accommodate variation along all observed phenomenal axes.
+
+\textit{Experiential states.}
+At each moment of listening, attention configures the experiential state: where attention is allocated determines a distinct position in experiential space. Experiential space is a state space: its points represent instantaneous configurations of experience. Analysis requires windowing time into discrete observation moments; a \emph{moment} is the minimal analytic partition at which experience is sampled. Empirical work on temporal perception supports discrete sampling models of conscious experience \citep{VanRullen2003, Poppel1997}. Musical experience unfolds as attention traversing experiential space \emph{state-by-state}, each successive moment sampling a new state. Each unique location in experiential space defines a distinct configuration with different coordinates, regional weightings, and co-present phenomenal qualities. 
+
+\textit{Granularity.}
+Experiential states may be analytically decomposed into constituent coordinates (frequency intensities, spatial positions, affective tensions, memorial qualities). These coordinates organize into emergent regions: density gradients where certain phenomenal qualities become prominent while others recede. Experiential states thus possess internal dimensionality: each state is simultaneously a \emph{location in high-dimensional space} and a \emph{configuration across multiple coordinates}, making each moment a rich, multi-faceted phenomenon. This high-dimensional structure enables granular precision that exceeds conventional music-theoretic categories. Where traditional analysis identifies motifs, harmonies, and rhythms as discrete features, experiential space allows further disaggregation, and differentiates the particular quality of \emph{attending to upper registers at this moment}, with \emph{this memorial context}, against \emph{this affective background}. This granularity makes intelligible how two organisms can both focus on the melody yet occupy genuinely different experiential states.
+
+
+\section{On Constraint-Surfaces}
+\label{sec:constraint-surfaces}
+
+A constraint-surface is a topological structure over a state space, forming a probability distribution that biases attentional trajectories. Constraint-surfaces function as an attractor field rather than deterministic mapping.
+
+\textit{Compositions as constraint-surfaces.}
+A composition acts as a \emph{constraint-surface}, inducing a probability landscape over high-dimensional experiential space: its motivic, temporal, harmonic, rhythmic, and textural qualities create accessibility gradients that make certain trajectories more likely than others. Different compositions establish different probability landscapes over the experiential space. Compositional structure functions through attraction: harmonic progressions pull attention toward tonal regions, rhythmic organizations pace trajectories along certain paths, textural density establishes probable distributions of attentional focus. 
+
+\textit{Probabilistic guidance.}
+The same organism encountering different compositions \emph{will almost certainly} trace different trajectories because the probability gradients strongly favor certain regions over others. This probabilistic structure allows for deviation but with resistance: attention can traverse regions that challenge compositional pull (listening \emph{against the grain}, focusing on peripheral elements, occupying unexpected experiential states), but doing so may require greater effort (expending greater cognitive resources) to overcome the probability gradients the composition establishes during listening. Various phenomena (thoughts, environments, organism state) introduce competing attractors that can pull attention in different directions. Phenomenologically, the composition is not deterministic; rather, it is generative of likelihood, shaping which trajectories naturally emerge while leaving open the possibility of resistant paths. The composition is thus not \emph{in} the experiential space but rather \emph{structures its probabilistic topology}. Even \emph{degenerate compositions} (sine waves, white noise) establish constraint-surfaces, albeit with potentially more trivial probability gradients than complex compositions. In this light, the composition functions less as object to be \emph{mastered} than as structure inviting \emph{participation}, what Gadamer describes as \emph{the play of art}, where organisms are drawn into movement they do not fully control \citep{Gadamer1975}.
+
+
+
+\section{On Recursion}
+\label{sec:recursion}
+
+\textit{Temporal recursion.}
+Each moment's experiential state transforms the organism's state, conditioning what can manifest next. Recursion ensures that no moment arrives with a blank slate: each inherits the accumulated effects of all prior states.
+
+\textit{Expanding and contracting possibilities.}
+While the compositional constraint-surface remains invariant, attentional variability and phenomenological externalities dynamically introduce other attractors and repellors that may deviate attention toward different parts of the experiential space. These updates both open and close potentials. Certain states open access to previously unreachable regions: discovering a hidden motif suddenly makes motif-proximal regions accessible. Other states negate access: interference effects block certain regions, causing previously traversable areas to become unreachable. Which regions remain accessible versus inaccessible shifts moment-to-moment based on recursive updates, like doors continuously opening and closing throughout a labyrinth.
+
+\textit{Path-dependence.}
+Temporal recursion creates path-dependence. Path-dependence means that the outcome of a process depends on the historical sequence of states that led to it. Different attentional sequences through the same compositional substrate yield distinct paths through experiential space. Early states condition entire downstream trajectories: occupying upper-frequency regions early versus lower-frequency regions early can send the encounter down fundamentally different paths through the same composition, traversing different territories and generating genuinely distinct trajectories.
+
+\textit{Emergence.}
+Path-dependence generates emergent phenomena unique to specific sequential orderings. Certain regions of experiential space exhibit path-conditionality: they become accessible only after traversing particular prior sequences, like locks requiring specific keys. A region embodying resolution may be unreachable except through prior traversal of specific tension-states. Conversely, traversing certain paths may foreclose access to other regions. When forward and reverse orderings yield different accessible regions, temporal sequence becomes constitutive: attending to \emph{foreground → background spatial layers} generates different emergent gestalts than \emph{background → foreground}. Further, the very categories themselves (foreground and background) are perturbed by the attentional trajectory. These sequence-dependent structures constitute what makes each encounter unique: not only which states are visited, but which emergent patterns arise from their ordering and which path-locked regions become accessible.
+
+
+\section{On Trajectories}
+\label{sec:trajectory}
+
+Musical experience unfolds as a \emph{trajectory} through experiential space: a temporal sequence of experiential states creating the experience of movement and transformation. Each successive moment samples a new state; the sequence defines the encounter's unique path through experiential space. The trajectory is the complete path through experiential space traversed during an encounter. A trajectory consists of the ordered sequence of states $\mathbf{s}_{t_1} \rightarrow \mathbf{s}_{t_2} \rightarrow \mathbf{s}_{t_3} \rightarrow \ldots \rightarrow \mathbf{s}_{t_n}$ sampled across the encounter's duration. The trajectory documents which regions of experiential space were traversed, in what order, revealing the path an organism traced through experiential space.
+
+
+
+\section{Illuminations}
+
+
+\textit{Combinatorial explosion.}
+A space with $n$ dimensions and $k$ distinguishable positions per dimension contains $k^n$ possible configurations. An \emph{$m$} moment encounter constitutes a temporal sequence of $m$ selections from this vast state space, admitting an upper bound of $(k^n)^m$ possible trajectories. Path-conditionality constraints (where certain sequences unlock or foreclose regions) and non-repeatability (where experiential states cannot be identically revisited due to memorial or variable overlays) reduce this theoretical maximum, but the realizable trajectory space remains combinatorially vast.
+
+\textit{Listening as navigation.}
+This framework reconceptualizes musical listening from extraction to navigation. Instead of asking \emph{what features does this composition have?}, the framework asks \emph{what paths does this composition enable?}. Features become path-dependent: what an organism \emph{realizes} depends on how it navigates the space. Encounters with the same composition exceed monolithic, object-deterministic description. A musical composition serves as invitation to exploration, a space to be traversed rather than an object to be decoded.
+
+\textit{Irreproducibility.}
+Each trajectory is irreproducible: attentional stochasticity as well as path-dependence yield divergent paths through experiential space, making identical trajectories vanishingly improbable even for the same composition. To produce identical trajectories across two encounters would require perfect replication of all conditions: identical organism state, identical environmental conditions, identical attentional starting points, and absence of memory traces from the first encounter. Under such ideal conditions, the encounters would collapse phenomenologically into numerical identity. Without memorial markers of \emph{secondness}, there would be no phenomenological basis for distinguishing them as separate encounters. \emph{It would phenomenologically be that very same encounter}. What is experienced as repetition arises from overlay phenomena (\emph{againness}, \emph{recognition}, \emph{this-reminds-me-of}), manifesting alongside qualitatively similar configurations. These memorial phenomena constitute the phenomenology of repetition itself: what makes a repeated motif feel like repetition rather than first occurrence is the presence of memorial qualities marking it as \emph{heard before}. Numerical identity thus precludes repetition: to be experientially the same is to be numerically one, not two. All felt repetition necessarily involves phenomenal variation through overlay effects that distinguish second encounters from first. 
+
+\textit{Stratification of radical multiplicity.}
+Radical multiplicity operates at nested scales. A repeating motif, acoustically identical across iterations, may nonetheless manifest within evolving harmonic, rhythmic, and memorial contexts, ensuring each occurrence generates distinct experiential states. The motif becomes a locus of local similarity nested within scales of difference: surrounding harmonic progressions shift, accumulated listening history updates organism state, attention wanders to new regions. What recurs acoustically becomes phenomenologically novel through its changed embedding. Radical multiplicity does not mean every aspect must differ but only that the total configuration of each experiential state be unprecedented. Local repetitions (motivic returns, ostinatos, refrains) may coexist within global uniqueness. The framework thus accommodates musical repetition-structures while maintaining that no moment's complete experiential state ever recurs, that even repeated material unfolds into multiplicity.
+
+\textit{Revisitability.}
+The proliferation of innumerable trajectories allows the same composition to be revisited repeatedly without exhaustion, echoing Adorno's insight that musical works resist complete realization \citep{Adorno2006}. This makes intelligible the phenomenology of \emph{longing} that characterizes musical revisitation. An organism returns with dual motivations: attempting to recapture what it had before (\emph{though that configuration is irretrievably lost}) while simultaneously seeking to encounter unrealized possibilities.
+
+\textit{Diversity.}
+Any organism encountering the same composition will trace different trajectories through experiential space. Each organism brings distinct perceptual capacities, cognitive schemas, memorial histories, and contextual embeddings, and thus necessarily occupies different starting positions and follows different accessibility gradients. Such multiplicity operates across different organisms as it does across temporal encounters of one organism. A composition does not encode a single \emph{correct} experience to be extracted: what one organism hears as \emph{melancholic}, another may experience as \emph{contemplative}; what draws one organism's attention to harmonics leaves another focused on textures. Such deltas between trajectories exemplify diversity of realities from encounters with the same composition. 
+
+\textit{The receding horizon.}
+Attending to one region of experiential space introduces accessibility gradients toward proximal regions, enabling reach into otherwise latent coordinates and creating ever-expanding territory. \emph{Attention cannot catch up to itself}: the act of attending actively excavates the landscape into deeper regions, the horizon forever withdrawing as attention advances. This parallels what Marion describes as \emph{saturation}: \emph{the experiential space exceeds attentional capacity through excess, too much to be grasped, intuition overflowing intention} \citep{Marion2002}. 
+
+\section{Towards a Generalization of Complex Signals}
+
+
+Abstracting from musical encounters exposes a core framework applicable to any complex signal: finite, variable attention situated within organism-environment couplings recursively sampling high-dimensional state space shaped by signal-defined constraint-surfaces. This  generalizes to any system where (1) processing unfolds in high-dimensional state space, (2) signals establish probability gradients without determining outcomes, (3) attention is finite and variable, and (4) recursion creates path-dependence. The framework illuminates why radical multiplicity characterizes experiential encounters with sufficiently complex signals: musical compositions, visual artworks, literary narratives, films, interactive environments across biological and artificial substrates.
+
+\section{Null Trajectory}
+
+A hypothetical system unconstrained by finite capacity would nullify radical multiplicity. A counterintuitive relationship is revealed: unconstrained attention yields \emph{singularity}, while finite, variable attention generates \emph{multiplicity}. Unconstrained capacity or invariant attention forecloses the very proliferation of trajectories that characterizes the inexhaustibility of musical experience. Four limiting cases of the \emph{null trajectory} reveal why these ideal conditions would not yield enriched experience, but rather experiential poverty.
+
+\textit{Null-1: Uniform Saturation.} Suppose attention somehow attended to all phenomena with equal intensity: tension and release equally present, foreground and background indistinguishable, every frequency equally attended. This configuration is structurally impossible given the \emph{intrinsic geometry of experiential space}. Certain coordinates exhibit mutual exclusivity: attending equally to \emph{tension} and \emph{release} would not preserve both as distinct qualities but collapse into a third state or oscillate between them. Other coordinates require contrast to exist: \emph{foreground} is only meaningful relative to \emph{background}, marked by disparity in attentional intensity. Even if uniform distribution were somehow achieved, the result would not be enriched totality but phenomenal incoherence: experiencing nothing determinately, collapsing into undifferentiated noise. Musical experience requires phenomenal differentiation, where some phenomena come into sharp relief while others recede into diffuse awareness. Without selective emphasis creating contrast, the phenomenal field lacks the differential organization through which musical phenomena manifest.
+
+\textit{Null-2: Compositional irrelevance.} An unconstrained attention would be unperturbed by the constraint-surface's probability gradients: attractors would fail to pull it, repellors would fail to deter it. The composition's constraint-surface functions by creating differential accessibility, making certain trajectories more probable, certain regions easier to reach. Unconstrained attention encounters no differential resistance: all possible paths become equally likely for traversal, regardless of compositional structure. The constraint-surface's structuring gradients cease to shape navigation when attention has unconstrained capacity to overcome them. Compositional structure becomes non-functional. Its constraint-surface requires finite, variable attention for its guiding role to manifest.
+
+\textit{Null-3: Temporal dissolution.} 
+Musical experience structurally requires finitude of temporal access and ordering: what comes before conditions what follows, creating development, anticipation, the sense of \emph{forwardness}, \emph{ongoingness}, and \emph{resolution}. If attention could somehow sample all temporal positions simultaneously, \emph{temporality} as a construct would collapse: path-dependence would not exist, and the lived experience of musical duration would dissolve. Without the carving of temporal succession, there can be no unfolding, no arc, no trajectory.
+
+\textit{Null-4: Invariant Attention.} Even with finite capacity forcing selectivity, suppose attention were \emph{deterministic}, always resolving to identical coordinates given identical compositional input. Deterministic attention would trace the same trajectory across all encounters with the same composition. Without variability, the same compositional substrate would always produce the same selective path through experiential space, impoverishing the organism's musical experience of its potential for variation and novelty. Radical multiplicity requires not only finite capacity forcing choices, but variability ensuring those choices differ. 
+
+
+\section{Limitation is Generative}
+
+The null trajectory reveals that unconstrained or invariant attention would nullify radical multiplicity. Limitation thus functions as a generative principle rather than deficiency \citep{Heidegger1962}. Finite, variable attention does not deprive musical experience; it enables it. Without constraints forcing selective paths through experiential space, there would be no proliferation of trajectories, no call for revisitation, no further discoveries to be made. The radical multiplicity of musical experience arises from what finite attention \emph{cannot do}: it cannot attend uniformly, cannot overcome compositional gradients, cannot collapse temporal succession, and cannot repeat deterministically.
+
+The constraint-surface's guiding function depends on attention being subject to its attractors. Finite capacity makes attention susceptible to compositional pull: gradients shape trajectories precisely because attention lacks the capacity to overcome all resistance simultaneously. This susceptibility is the condition through which compositional structure manifests its guiding role.
+
+Finitude is revealed as an existential prerequisite for musical experience, with radical multiplicity as an intrinsic property. The conditions that enable musical experience necessarily enable radical multiplicity. What began as phenomenological observation is revealed as architectural requirement: \emph{Finite, variable attention $\rightarrow$ phenomenological observation of multiplicity $\rightarrow$ structural requirement for degrees of freedom $\rightarrow$ high-dimensional experiential space $\rightarrow$ combinatorial vastness $\rightarrow$ inexhaustibility}. One composition: innumerable realities. \emph{Where there is music, there is radical multiplicity}.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+
+\end{document}
